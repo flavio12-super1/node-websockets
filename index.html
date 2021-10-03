@@ -15,7 +15,7 @@
   </head>
   <body>
     <p id="server-time"></p>
-
+    updated:
     <input id="userinput" />
     <p class="response"></p>
 
@@ -29,7 +29,8 @@
           url: "userinput.php",
           data: { userInput: userData },
         }).done(function (response) {
-          $("p.response").html(response);
+          //$("p.response").html(response);
+          console.log(response);
         });
       }
     </script>
